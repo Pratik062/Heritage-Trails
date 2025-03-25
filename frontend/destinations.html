@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Heritage Trails</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="destination.css"> <!-- Destinations page-specific styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body style="background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./res/images/north_east.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Heritage Trails</h1>
+                </a>
+            </div>
+            <div class="toggle-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="cultural.html">Cultural</a></li>
+                <li><a href="wildlife.html">Wildlife</a></li>
+                <li><a href="divine.html">Divine</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn-login">Login</a></li>
+                <li><a href="register.html" class="btn-register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Explore Destinations</h1>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search destinations...">
+            <button id="searchButton"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Featured Destinations -->
+        <div class="featured-destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Static Destinations -->
+                <div class="destination-card">
+                    <img src="./res/images/ladakh_biker.jpg" alt="Leh-Ladakh Bike Ride">
+                    <h3>Leh-Ladakh Bike Ride</h3>
+                    <p>Experience the thrill of biking through the rugged terrains of Leh-Ladakh.</p>
+                    <button onclick="bookDestination(1)">Book Now</button>
+                </div>
+                <div class="destination-card">
+                    <img src="./res/images/kerala.jpg" alt="Kerala Houseboat">
+                    <h3>Kerala Houseboat</h3>
+                    <p>Spend a night on a traditional houseboat in the serene backwaters of Kerala.</p>
+                    <button onclick="bookDestination(2)">Book Now</button>
+                </div>
+                <div class="destination-card">
+                    <img src="./res/images/fort.jpg" alt="Sahyadri Forts">
+                    <h3>Sahyadri Forts</h3>
+                    <p>Explore the majestic forts of Sahyadri and relive the history of Maharashtra.</p>
+                    <button onclick="bookDestination(3)">Book Now</button>
+                </div>
+                <div class="destination-card">
+                    <img src="./res/images/puri.jpg" alt="Puri Jagannath">
+                    <h3>Puri Jagannath</h3>
+                    <p>Experience the divine spirituality of Puri Jagannath Temple in Odisha.</p>
+                    <button onclick="bookDestination(4)">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include scripts.js for common functionality (e.g., toggle menu) -->
+    <script src="scripts.js"></script>
+    <!-- Include destination.js for destinations-specific functionality -->
+    <script src="destination.js"></script>
+</body>
+</html>
